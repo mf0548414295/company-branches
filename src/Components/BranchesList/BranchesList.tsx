@@ -26,7 +26,7 @@ function BranchesList() {
     return branches.filter(branch=>branch.store_region===selectedArea)
   };
   const sortByCity=(branches:Branch[])=>{
-    return branches.filter(branch=>branch.city===selectedCity)
+    return branches.filter(branch=>branch.city.trim()===selectedCity);
   };
   const sortByFreeTextSearch=(branches:Branch[])=>{
     return branches.filter(branch=>Object.keys(branch).find((key=>//get all items in one branch
