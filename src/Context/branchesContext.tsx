@@ -1,12 +1,12 @@
 import React, { createContext, PropsWithChildren, useState } from "react";
 
 interface BranchesContextProps {
-    selectedArea:string,
-    setSelectedArea: React.Dispatch<React.SetStateAction<string>>,
-    selectedCity:string,
-    setSelectedCity:React.Dispatch<React.SetStateAction<string>>,
-    freeTextSearch:string,
-    setFreeTextSearch:React.Dispatch<React.SetStateAction<string>>
+  selectedArea:string,
+  setSelectedArea: React.Dispatch<React.SetStateAction<string>>,
+  selectedCity:string,
+  setSelectedCity:React.Dispatch<React.SetStateAction<string>>,
+  freeTextSearch:string,
+  setFreeTextSearch:React.Dispatch<React.SetStateAction<string>>
 }
 
 export const BranchesContext = createContext<BranchesContextProps>({
